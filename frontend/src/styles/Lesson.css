@@ -1,0 +1,94 @@
+/* Lesson.css */
+
+/* Overall container for the lesson page */
+.lesson-container {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 30px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  /* Header styling */
+  .lesson-container h2 {
+    font-size: 2.5rem;
+    color: #4caf50; /* Duolingo green */
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  /* Container that holds all the modules */
+  .modules-container {
+    display: grid;
+    grid-template-columns: 1fr; /* One module per row (full size) */
+    gap: 20px;
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  /* Styling for each module card */
+  .module {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%; /* Full width */
+    text-align: center;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    max-width: 100%; /* Full width on all screen sizes */
+  }
+  
+  /* Hover effect on the module cards */
+  .module:hover {
+    transform: translateY(-10px); /* Slight hover effect */
+  }
+  
+  /* The 'unlocked' module styling */
+  .module.unlocked {
+    border: 3px solid #4caf50; /* Green border for unlocked modules */
+  }
+  
+  /* The 'locked' module styling */
+  .module.locked {
+    background-color: #f1f1f1;
+    border: 2px solid #ddd;
+    color: #888;
+  }
+  
+  /* Styling for the button */
+  .start-button {
+    background-color: #4caf50; /* Duolingo green */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  /* Hover effect for buttons */
+  .start-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Styling for the module description */
+  .module p {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 15px 0;
+    line-height: 1.6;
+  }
+  
+  /* Styling for score display */
+  .module p:last-child {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4caf50;
+  }

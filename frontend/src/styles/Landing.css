@@ -1,0 +1,677 @@
+/* Global Container Setup */
+*{
+    box-sizing: border-box;
+}
+.container {
+    font-family: "Arial, sans-serif";
+    color: #333;
+    background-color: #f0f4ff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+     /* Make the container fixed */ /* Ensure it's above other content */
+}
+
+/* Main Content */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-grow: 1;
+    gap: 2rem;
+    padding: 4rem 0;
+    padding-right: 4rem;
+    padding-top: 15rem; /* Add padding to offset the fixed header */
+    width: 100%;
+    margin:2rem;
+    /* Increase the width of the main content */
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    position: fixed;  /* Fix the header at the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: #f0f4ff;  /* Ensure it has a background to overlay content */
+    border-bottom: 3px solid #ff6f61;  /* Add a bottom border to the header */
+}
+
+/* Logo and Navigation */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #ff6f61;
+    margin-top:-1rem;
+}
+
+.logoIcon {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 0.6rem;
+    border-radius: 50%;
+    margin-right: 0.8rem;
+
+}
+
+.nav {
+    display: flex;
+    gap: 2rem;
+    transform: translateX(-20px);
+}
+
+.navLink {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.navLink:hover {
+    color: #ff6f61;
+}
+
+/* Main Content Layout */
+
+/* Text Section */
+.textSection {
+    flex: 1;
+    padding-right: 3rem;
+}
+
+.heading {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+.languageText {
+    color: #8f5fc4;
+}
+
+.description {
+    margin: 1.5rem 0;
+    font-size: 1.3rem;
+    color: #555;
+    max-width: 80%;
+}
+
+.readMoreButton {
+    background-color: #ffd93b;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.readMoreButton:hover {
+    background-color: #d4b50e;
+}
+
+/* Floating Letters Container */
+.floatingLettersContainer {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    z-index: 1;
+    margin-right: 2rem;
+}
+
+/* Floating Letters container remains static */
+.floatingLetters {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* Floating Image remains stationary */
+.floatingImage {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+}
+
+/* Speech bubbles rotate around the image */
+.speechBubble {
+    position: absolute;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: 'Verdana', sans-serif;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    animation: orbit 12s infinite linear;
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Individual Bubble Colors */
+.bubble1 {
+    background-color: #ff6f61;  /* Red */
+    animation-delay: 0s;
+}
+
+.bubble2 {
+    background-color: #ff8c42;  /* Orange */
+    animation-delay: 2s;
+}
+
+.bubble3 {
+    background-color: #ffd93b;  /* Yellow */
+    animation-delay: 4s;
+}
+
+.bubble4 {
+    background-color: #4caf50;  /* Green */
+    animation-delay: 6s;
+}
+
+.bubble5 {
+    background-color: #8e44ad;  /* Purple */
+    animation-delay: 8s;
+}
+
+.bubble6 {
+    background-color: #3498db;  /* Blue */
+    animation-delay: 10s;
+}
+
+/* Hover Effects */
+.speechBubble:hover {
+    transform: scale(1.1); /* Enlarge the bubble */
+    background-color: #ffffff; /* Change to white */
+    color: #333; /* Change text color to dark */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7); /* Glow effect */
+    transition: all 0.3s ease-in-out;
+}
+
+.speechBubble.bounce:hover {
+    animation: bounce 0.5s ease-in-out;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px); /* Bounce up */
+    }
+    60% {
+        transform: translateY(-5px); /* Bounce down */
+    }
+}
+
+.speechBubble.rotate:hover {
+    transform: rotate(15deg); /* Rotate bubble on hover */
+    background-color: #8e44ad; /* Change the background color on hover */
+    color: #fff; /* Change text color */
+}
+
+.speechBubble.fade:hover {
+    opacity: 0.8; /* Fade slightly */
+    transform: scale(1.1); /* Slightly enlarge the bubble */
+}
+
+.speechBubble.swing:hover {
+    transform: rotate(5deg); /* Tilt the bubble */
+    transition: transform 0.2s ease-in-out;
+}
+
+.speechBubble.gradient:hover {
+    background: linear-gradient(45deg, #ff6f61, #ff8c42); /* Gradient background */
+    color: #fff; /* Change text color to white */
+}
+
+/* Translation Tooltip (Hover effect) */
+.speechBubble:hover::after {
+    content: attr(data-translation);
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 0.7rem 1.2rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    opacity: 1;
+    pointer-events: none;
+    z-index: 3;
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* Animation for fade-in of the tooltip */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0px);
+    }
+}
+
+/* Keyframe for orbiting the bubbles around the image */
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg) translateX(250px) rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(250px) rotate(-360deg);
+    }
+}
+
+/* About Section */
+.aboutSection {
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.sectionHeading {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.sectionDescription {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Courses Section */
+.coursesSection {
+    background-color: #f7f7f7;
+    padding: 5rem 0;
+}
+
+.courseList {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap; /* Allows courses to stack on smaller screens */
+}
+
+.courseCard {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 25%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.courseCard h3 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.courseButton {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.courseButton:hover {
+    background-color: #d45b4d;
+}
+
+/* Contact Section */
+/* Contact Section */
+.contactSection {
+    background-color: #f7f8fa; /* Soft neutral background */
+    padding: 5rem 2rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    margin-top: 4rem;
+    max-width: 800px;
+    margin: 4rem auto;
+}
+
+.sectionHeading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.sectionDescription {
+    font-size: 1.15rem;
+    color: #777;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    line-height: 1.5;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        padding-right: 2rem;
+    }
+
+    .floatingLettersContainer {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .floatingLetters {
+        width: 250px;
+        height: 250px;
+    }
+
+    .courseCard {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .heading {
+        font-size: 2.5rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .aboutSection {
+        padding: 3rem 1rem;
+    }
+
+    .courseList {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Ensure the body and html fill the entire viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    width: 100%;
+    position: relative; /* Remove fixed position */
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+    height: 200%; /* Push footer to the bottom */
+}
+
+/* Footer Content */
+.footerContent {
+    display: flex;
+    justify-content: space-between; /* Space out content between left and right */
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Copyright Text (Left-aligned) */
+.footerCopyright {
+    text-align: left;
+    flex: 1;
+    font-size: 1rem;
+    color: blue;
+}
+
+/* Social Icons Section (Right-aligned) */
+.footerSocials {
+    display: flex;
+    justify-content: flex-end; /* Align social icons to the right */
+    gap: 2rem;
+}
+
+.socialIcon {
+    color: #fff;
+    font-size: 2.5rem;
+    transition: color 0.3s ease;
+}
+
+.socialIcon:hover {
+    color: #ff6f61; /* Hover color */
+}
+
+/* Contact Info Section (Below the main footer content) */
+.footerContactInfo {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.footerContactInfo p {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+    color: #ddd;
+}
+
+.footerContactInfo p:first-child {
+    font-weight: bold;
+}
+
+.footer p {
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+}
+
+
+/* Responsive Footer */
+@media screen and (max-width: 768px) {
+    .footerContent {
+        flex-direction: column; /* Stack content vertically on small screens */
+        text-align: center;
+    }
+
+    .footerSocials {
+        justify-content: center; /* Center social icons on small screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footerCopyright {
+        font-size: 0.9rem; /* Smaller font size on mobile */
+    }
+
+    .socialIcon {
+        font-size: 2rem; /* Smaller icons on mobile */
+    }
+}
+
+.copy{
+    font-size: 1.4rem;
+}
+
+/* About Section Styling */
+.aboutSection {
+    padding: 5rem 0;
+    text-align: center;
+    background-color: #f7f7f7;
+    position: relative;
+    overflow: hidden; /* Prevents overflow of slider */
+  }
+  
+  .sectionHeading {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .sectionDescription {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+  
+  /* Slider Container */
+  .sliderContainer {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden; /* Hide extra content outside the container */
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 1s ease-in-out; /* Smooth transition for slide change */
+  }
+  
+  .slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .imageWrapper {
+    position: relative;
+    width: 60%; /* Set a percentage to control the image size */
+    max-width: 800px; /* Maximum width of the image */
+    height: 300px; /* Fixed height to reduce the image size */
+    overflow: hidden;
+    margin: 0 auto; /* Center the image horizontally */
+  }
+  
+  .slideImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Makes sure image covers the entire container */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for contrast */
+  }
+  
+  .slideContent {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6); /* Ensures readability */
+    padding: 15px;
+    border-radius: 5px;
+    max-width: 100%;
+    text-align: center; /* Center the content */
+    margin-left: 23rem;
+  }
+  
+  .slideContent h3 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .slideContent p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+  }
+  
+  /* Navigation buttons (if you still want them) */
+  button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 2rem;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+  }
+  
+  button.prev {
+    left: 10px;
+  }
+  
+  button.next {
+    right: 10px;
+  }
+  
+  button.prev:hover, button.next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .sliderContainer {
+      max-width: 100%;
+    }
+  
+    .sectionHeading {
+      font-size: 2rem;
+    }
+  
+    .sectionDescription {
+      font-size: 1rem;
+    }
+  
+    .imageWrapper {
+      width: 80%; /* Increase the image size on smaller screens */
+      height: 250px; /* Reduce the height on smaller screens */
+    }
+  }

@@ -1,0 +1,200 @@
+/* PracticeModule.css */
+
+/* Overall container for the practice page */
+.practice-container {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f8fa; /* Light background */
+    text-align: center;
+    padding: 50px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Header styling for module */
+  .practice-container h2 {
+    font-size: 2.5rem;
+    color: #4caf50; /* Duolingo Green */
+    margin-bottom: 20px;
+    font-weight: bold;
+    margin-top: 0;
+  }
+  
+  /* Progress bar styling */
+  .progress-bar {
+    width: 80%;
+    height: 8px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    margin: 20px 0;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #4caf50; /* Duolingo Green */
+    border-radius: 4px;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  /* Word container for displaying word and translation */
+  .word-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .word-container h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .word-container p {
+    font-size: 1.3rem;
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  /* Button Styling */
+  .next-button {
+    background-color: #4caf50; /* Duolingo Green */
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  /* Button hover effect */
+  .next-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  .next-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  /* Styling for locked module message */
+  .practice-container p {
+    color: #d32f2f;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .practice-container {
+    background-color: #f0f7f4; /* Light green background like Duolingo */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4b8c4a; /* Duolingo green color */
+  }
+  
+  .progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #e0e0e0;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #4b8c4a;
+    border-radius: 5px;
+  }
+  
+  .word-container {
+    text-align: center;
+  }
+  
+  .word-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .word-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .word-card p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .microphone-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .mic-button {
+    background-color: #4b8c4a;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .mic-button:hover {
+    background-color: #387738;
+  }
+  
+  .mic-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .next-button {
+    background-color: #4b8c4a;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .next-button:hover {
+    background-color: #387738;
+  }
+  
+  /* app-container */
+  .app-container {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f4f7fb;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  

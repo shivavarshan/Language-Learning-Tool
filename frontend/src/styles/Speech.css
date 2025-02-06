@@ -1,0 +1,156 @@
+/* Main container for the app */
+.app-container {
+  font-family: 'Arial', sans-serif;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Header styling */
+.header {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Language selector */
+.language-selector {
+  margin-bottom: 20px;
+}
+
+.language-selector label {
+  font-size: 18px;
+  color: #34495e;
+}
+
+.language-selector select {
+  padding: 10px;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #ecf0f1;
+  width: 50%;
+  display: block;
+  margin: 10px auto;
+}
+
+/* Form input and submit button */
+.input-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 70%;
+  padding: 12px;
+  margin-right: 10px;
+  border: 1px solid #bdc3c7;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.submit-btn {
+  padding: 12px 20px;
+  background-color: #3498db;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #2980b9;
+}
+
+.submit-btn:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.loading-icon {
+  animation: spin 1s infinite linear;
+}
+
+/* Animation for loading spinner */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Translation result section */
+.translation-result {
+  margin-top: 20px;
+}
+
+.speak-btn {
+  padding: 10px 15px;
+  background-color: #27ae60;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.speak-btn:hover {
+  background-color: #2ecc71;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 14px;
+}
+
+.history-toggle-btn {
+  background-color: #f39c12;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.history-toggle-btn:hover {
+  background-color: #e67e22;
+}
+
+.history-section {
+  margin-top: 20px;
+}
+
+.clear-history-btn {
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.clear-history-btn:hover {
+  background-color: #c0392b;
+}
+
+.history-list {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.history-list li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.history-list strong {
+  color: #34495e;
+}
+
+.history-list span {
+  color: #2ecc71;
+}

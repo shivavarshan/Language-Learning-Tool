@@ -1,0 +1,305 @@
+
+  /* Container for the Sign-Up Form */
+  .signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%; /* Keep it full height of the screen */
+    padding: 3rem 0; /* Add top and bottom padding for spacing */
+    background: rgba(255, 255, 255, 0.1); /* Light translucent background */
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    border-radius: 15px;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    justify-content: center; /* Center form vertically */
+    gap: 1rem; /* Add some space between form and title */
+  }
+  
+  /* Form Container with Increased Width and Reduced Height */
+  .form-container {
+    width: 650px; /* Increased width */
+    height: auto; /* Reduced height to fit content */
+    max-height: 800px; /* Limit the height on larger screens */
+    max-width: 100%;
+    background: #000; /* Black background */
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px); /* For Safari */
+    color: #fff; /* White text for contrast */
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Introduction Section */
+  .form-container .intro-text {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    animation: fadeIn 1s ease-out;
+    line-height: 1.6;
+  }
+  
+  .form-container .intro-text h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #feb47b; /* Warm color to highlight */
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .form-container .intro-text p {
+    font-size: 1rem;
+    color: #ddd;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-container .intro-text h2:hover {
+    color: #ff7e5f;
+    cursor: pointer;
+    transform: translateY(-2px);
+  }
+  
+  /* Form Title */
+  .form-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  /* Input Field Grouping */
+  .input-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+  
+  .input-group label {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    display: block;
+    font-weight: 500;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    outline: none;
+  }
+  
+  .input-group input:focus {
+    border-color: #feb47b;
+    box-shadow: 0 0 10px rgba(255, 132, 94, 0.6);
+  }
+  
+  .input-group input:focus + label {
+    color: #feb47b;
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: #ff7e5f;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .submit-btn:hover {
+    background-color: #feb47b;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Disabled Submit Button */
+  .submit-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Error Message Styling */
+  .error-message {
+    color: #ff4d4d;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  /* Login Link Styling */
+  .login-link {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #fff;
+  }
+  
+  .login-link .link-btn {
+    color: #feb47b;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .login-link .link-btn:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Styling */
+  @media screen and (max-width: 600px) {
+    .signup-container {
+      padding: 2rem;
+    }
+  
+    .form-container {
+      padding: 2rem;
+      width: 100%;
+    }
+  
+    .form-title {
+      font-size: 1.6rem;
+    }
+  
+    .input-group input {
+      padding: 0.8rem;
+    }
+  
+    .submit-btn {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Keyframes for Fade-In Effect */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  
+
+  /* Unique Button Styling */
+.register-btn {
+  border: none;
+  width: 100%;
+  height: 49px;
+  margin-top: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: #99ccff;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Muli-SemiBold", sans-serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+  transition: all 0.5s;
+  position: relative;
+  overflow: hidden;
+}
+
+.register-btn span {
+  position: relative;
+  z-index: 2;
+}
+
+.register-btn:before, .register-btn:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(52, 152, 253, 0.25);
+  transition: all 0.3s;
+  transform: translate(-100%, 0);
+  transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+
+.register-btn:after {
+  transition-delay: 0.2s;
+}
+
+.register-btn:hover:before, .register-btn:hover:after {
+  transform: translate(0, 0);
+}
+
+
+  /* Unique Button Styling */
+  .login-btn {
+    border: none;
+    width: 100%;
+    height: 49px;
+    margin-top: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: #99ccff;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Muli-SemiBold", sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .login-btn span {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .login-btn:before, .login-btn:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(52, 152, 253, 0.25);
+    transition: all 0.3s;
+    transform: translate(-100%, 0);
+    transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+  }
+  
+  .login-btn:after {
+    transition-delay: 0.2s;
+  }
+  
+  .login-btn:hover:before, .login-btn:hover:after {
+    transform: translate(0, 0);
+  }
+  

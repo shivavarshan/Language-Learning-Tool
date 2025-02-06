@@ -1,0 +1,660 @@
+{
+    "words": [
+      {
+        "english": "hello",
+        "french": "bonjour",
+        "category": "greeting"
+      },
+      {
+        "english": "goodbye",
+        "french": "au revoir",
+        "category": "greeting"
+      },
+      {
+        "english": "please",
+        "french": "s'il vous plaît",
+        "category": "polite expressions"
+      },
+      {
+        "english": "thank you",
+        "french": "merci",
+        "category": "polite expressions"
+      },
+      {
+        "english": "yes",
+        "french": "oui",
+        "category": "basic"
+      },
+      {
+        "english": "no",
+        "french": "non",
+        "category": "basic"
+      },
+      {
+        "english": "good morning",
+        "french": "bonjour",
+        "category": "greeting"
+      },
+      {
+        "english": "good night",
+        "french": "bonne nuit",
+        "category": "greeting"
+      },
+      {
+        "english": "how are you?",
+        "french": "comment ça va ?",
+        "category": "question"
+      },
+      {
+        "english": "fine",
+        "french": "ça va bien",
+        "category": "response"
+      },
+      {
+        "english": "my name is",
+        "french": "je m'appelle",
+        "category": "introduction"
+      },
+      {
+        "english": "what's your name?",
+        "french": "comment tu t'appelles ?",
+        "category": "question"
+      },
+      {
+        "english": "where?",
+        "french": "où ?",
+        "category": "question"
+      },
+      {
+        "english": "why?",
+        "french": "pourquoi ?",
+        "category": "question"
+      },
+      {
+        "english": "who?",
+        "french": "qui ?",
+        "category": "question"
+      },
+      {
+        "english": "when?",
+        "french": "quand ?",
+        "category": "question"
+      },
+      {
+        "english": "cat",
+        "french": "chat",
+        "category": "animals"
+      },
+      {
+        "english": "dog",
+        "french": "chien",
+        "category": "animals"
+      },
+      {
+        "english": "bird",
+        "french": "oiseau",
+        "category": "animals"
+      },
+      {
+        "english": "fish",
+        "french": "poisson",
+        "category": "animals"
+      },
+      {
+        "english": "house",
+        "french": "maison",
+        "category": "places"
+      },
+      {
+        "english": "school",
+        "french": "école",
+        "category": "places"
+      },
+      {
+        "english": "hospital",
+        "french": "hôpital",
+        "category": "places"
+      },
+      {
+        "english": "restaurant",
+        "french": "restaurant",
+        "category": "places"
+      },
+      {
+        "english": "book",
+        "french": "livre",
+        "category": "objects"
+      },
+      {
+        "english": "pen",
+        "french": "stylo",
+        "category": "objects"
+      },
+      {
+        "english": "computer",
+        "french": "ordinateur",
+        "category": "objects"
+      },
+      {
+        "english": "phone",
+        "french": "téléphone",
+        "category": "objects"
+      },
+      {
+        "english": "food",
+        "french": "nourriture",
+        "category": "food & drink"
+      },
+      {
+        "english": "water",
+        "french": "eau",
+        "category": "food & drink"
+      },
+      {
+        "english": "bread",
+        "french": "pain",
+        "category": "food & drink"
+      },
+      {
+        "english": "cheese",
+        "french": "fromage",
+        "category": "food & drink"
+      },
+      {
+        "english": "apple",
+        "french": "pomme",
+        "category": "food & drink"
+      },
+      {
+        "english": "orange",
+        "french": "orange",
+        "category": "food & drink"
+      },
+      {
+        "english": "coffee",
+        "french": "café",
+        "category": "food & drink"
+      },
+      {
+        "english": "tea",
+        "french": "thé",
+        "category": "food & drink"
+      },
+      {
+        "english": "morning",
+        "french": "matin",
+        "category": "time"
+      },
+      {
+        "english": "afternoon",
+        "french": "après-midi",
+        "category": "time"
+      },
+      {
+        "english": "evening",
+        "french": "soir",
+        "category": "time"
+      },
+      {
+        "english": "night",
+        "french": "nuit",
+        "category": "time"
+      },
+      {
+        "english": "today",
+        "french": "aujourd'hui",
+        "category": "time"
+      },
+      {
+        "english": "tomorrow",
+        "french": "demain",
+        "category": "time"
+      },
+      {
+        "english": "yesterday",
+        "french": "hier",
+        "category": "time"
+      },
+      {
+        "english": "one",
+        "french": "un",
+        "category": "numbers"
+      },
+      {
+        "english": "two",
+        "french": "deux",
+        "category": "numbers"
+      },
+      {
+        "english": "three",
+        "french": "trois",
+        "category": "numbers"
+      },
+      {
+        "english": "four",
+        "french": "quatre",
+        "category": "numbers"
+      },
+      {
+        "english": "five",
+        "french": "cinq",
+        "category": "numbers"
+      },
+      {
+        "english": "red",
+        "french": "rouge",
+        "category": "colors"
+      },
+      {
+        "english": "blue",
+        "french": "bleu",
+        "category": "colors"
+      },
+      {
+        "english": "green",
+        "french": "vert",
+        "category": "colors"
+      },
+      {
+        "english": "yellow",
+        "french": "jaune",
+        "category": "colors"
+      },
+      {
+        "english": "black",
+        "french": "noir",
+        "category": "colors"
+      },
+      {
+        "english": "white",
+        "french": "blanc",
+        "category": "colors"
+      },
+      {
+        "english": "I",
+        "french": "je",
+        "category": "pronouns"
+      },
+      {
+        "english": "you",
+        "french": "tu",
+        "category": "pronouns"
+      },
+      {
+        "english": "he",
+        "french": "il",
+        "category": "pronouns"
+      },
+      {
+        "english": "she",
+        "french": "elle",
+        "category": "pronouns"
+      },
+      {
+        "english": "we",
+        "french": "nous",
+        "category": "pronouns"
+      },
+      {
+        "english": "they",
+        "french": "ils/elles",
+        "category": "pronouns"
+      },
+      {
+        "english": "in",
+        "french": "dans",
+        "category": "prepositions"
+      },
+      {
+        "english": "on",
+        "french": "sur",
+        "category": "prepositions"
+      },
+      {
+        "english": "under",
+        "french": "sous",
+        "category": "prepositions"
+      },
+      {
+        "english": "with",
+        "french": "avec",
+        "category": "prepositions"
+      },
+      {
+        "english": "without",
+        "french": "sans",
+        "category": "prepositions"
+      },
+      {
+        "english": "to",
+        "french": "à",
+        "category": "prepositions"
+      },
+      {
+        "english": "for",
+        "french": "pour",
+        "category": "prepositions"
+      },
+      {
+        "english": "I go",
+        "french": "Je vais",
+        "category": "verb"
+      },
+      {
+        "english": "You are",
+        "french": "Tu es",
+        "category": "verb"
+      },
+      {
+        "english": "He runs",
+        "french": "Il court",
+        "category": "verb"
+      },
+      {
+        "english": "We speak",
+        "french": "Nous parlons",
+        "category": "verb"
+      },
+      {
+        "english": "She sleeps",
+        "french": "Elle dort",
+        "category": "verb"
+      },
+      {
+        "english": "It works",
+        "french": "Ça marche",
+        "category": "verb"
+      },
+      {
+        "english": "You walk",
+        "french": "Tu marches",
+        "category": "verb"
+      },
+      {
+        "english": "I eat",
+        "french": "Je mange",
+        "category": "verb"
+      },
+      {
+        "english": "You listen",
+        "french": "Tu écoutes",
+        "category": "verb"
+      },
+      {
+        "english": "It rains",
+        "french": "Il pleut",
+        "category": "verb"
+      },
+      {
+        "english": "We work",
+        "french": "Nous travaillons",
+        "category": "verb"
+      },
+      {
+        "english": "I sleep",
+        "french": "Je dors",
+        "category": "verb"
+      },
+      {
+        "english": "I read",
+        "french": "Je lis",
+        "category": "verb"
+      },
+      {
+        "english": "He talks",
+        "french": "Il parle",
+        "category": "verb"
+      },
+      {
+        "english": "She cries",
+        "french": "Elle pleure",
+        "category": "verb"
+      },
+      {
+        "english": "I study",
+        "french": "J'étudie",
+        "category": "verb"
+      },
+      {
+        "english": "You sing",
+        "french": "Tu chantes",
+        "category": "verb"
+      },
+      {
+        "english": "It shines",
+        "french": "Ça brille",
+        "category": "verb"
+      },
+      {
+        "english": "We laugh",
+        "french": "Nous rions",
+        "category": "verb"
+      },
+      {
+        "english": "They dance",
+        "french": "Ils dansent",
+        "category": "verb"
+      },
+      {
+        "english": "Go ahead",
+        "french": "Vas-y",
+        "category": "imperative"
+      },
+      {
+        "english": "Stay here",
+        "french": "Reste ici",
+        "category": "imperative"
+      },
+      {
+        "english": "Sit down",
+        "french": "Assieds-toi",
+        "category": "imperative"
+      },
+      {
+        "english": "Come here",
+        "french": "Viens ici",
+        "category": "imperative"
+      },
+      {
+        "english": "Help me",
+        "french": "Aide-moi",
+        "category": "imperative"
+      },
+      {
+        "english": "Wait here",
+        "french": "Attends ici",
+        "category": "imperative"
+      },
+      {
+        "english": "I’m sorry",
+        "french": "Je suis désolé",
+        "category": "polite expression"
+      },
+      {
+        "english": "Thank you",
+        "french": "Merci beaucoup",
+        "category": "polite expression"
+      },
+      {
+        "english": "You’re welcome",
+        "french": "De rien",
+        "category": "polite expression"
+      },
+      {
+        "english": "I am tired",
+        "french": "Je suis fatigué",
+        "category": "verb"
+      },
+      {
+        "english": "You are happy",
+        "french": "Tu es content",
+        "category": "verb"
+      },
+      {
+        "english": "She is here",
+        "french": "Elle est ici",
+        "category": "verb"
+      },
+      {
+        "english": "We are friends",
+        "french": "Nous sommes amis",
+        "category": "verb"
+      },
+      {
+        "english": "He is smart",
+        "french": "Il est intelligent",
+        "category": "verb"
+      },
+      {
+        "english": "It is cold",
+        "french": "Il fait froid",
+        "category": "verb"
+      },
+      {
+        "english": "They are tired",
+        "french": "Ils sont fatigués",
+        "category": "verb"
+      },
+      {
+        "english": "I love you",
+        "french": "Je t'aime",
+        "category": "verb"
+      },
+      {
+        "english": "You need help",
+        "french": "Tu as besoin d'aide",
+        "category": "verb"
+      },
+      {
+        "english": "He likes it",
+        "french": "Il aime ça",
+        "category": "verb"
+      },
+      {
+        "english": "We go there",
+        "french": "Nous y allons",
+        "category": "verb"
+      },
+      {
+        "english": "She wants more",
+        "french": "Elle veut plus",
+        "category": "verb"
+      },
+      {
+        "english": "They have it",
+        "french": "Ils l'ont",
+        "category": "verb"
+      },
+      {
+        "english": "I don't know",
+        "french": "Je ne sais pas",
+        "category": "negative"
+      },
+      {
+        "english": "We will go",
+        "french": "Nous allons y aller",
+        "category": "future"
+      },
+      {
+        "english": "You can go",
+        "french": "Tu peux y aller",
+        "category": "ability"
+      },
+      {
+        "english": "Is it ready?",
+        "french": "Est-ce prêt ?",
+        "category": "question"
+      },
+      {
+        "english": "Where are you?",
+        "french": "Où es-tu ?",
+        "category": "question"
+      },
+      {
+        "english": "I like this",
+        "french": "J'aime ça",
+        "category": "verb"
+      },
+      {
+        "english": "It's not bad",
+        "french": "Ce n'est pas mal",
+        "category": "negative"
+      },
+      {
+        "english": "She is nice",
+        "french": "Elle est gentille",
+        "category": "verb"
+      },
+      {
+        "english": "This is mine",
+        "french": "C'est à moi",
+        "category": "possessive"
+      },
+      {
+        "english": "This is good",
+        "french": "C'est bon",
+        "category": "verb"
+      },
+      {
+        "english": "I feel good",
+        "french": "Je me sens bien",
+        "category": "verb"
+      },
+      {
+        "english": "You look great",
+        "french": "Tu as l'air super",
+        "category": "verb"
+      },
+      {
+        "english": "It's very hot",
+        "french": "Il fait très chaud",
+        "category": "verb"
+      },
+      {
+        "english": "We are late",
+        "french": "Nous sommes en retard",
+        "category": "verb"
+      },
+      {
+        "english": "He is wrong",
+        "french": "Il a tort",
+        "category": "verb"
+      },
+      {
+        "english": "I need help",
+        "french": "J'ai besoin d'aide",
+        "category": "verb"
+      },
+      {
+        "english": "She eats fish",
+        "french": "Elle mange du poisson",
+        "category": "verb"
+      },
+      {
+        "english": "It is done",
+        "french": "C'est fait",
+        "category": "verb"
+      },
+      {
+        "english": "They work hard",
+        "french": "Ils travaillent dur",
+        "category": "verb"
+      },
+      {
+        "english": "I will try",
+        "french": "Je vais essayer",
+        "category": "future"
+      },
+      {
+        "english": "We need food",
+        "french": "Nous avons besoin de nourriture",
+        "category": "verb"
+      },
+      {
+        "english": "She is angry",
+        "french": "Elle est en colère",
+        "category": "verb"
+      }
+    ]
+  }
+  
